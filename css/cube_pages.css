@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+/* ..about.. */
+
+.about-main{
+    width: 100%;
+    height: 100vh;
+    background: #ffc107;
+    padding: 10rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.about-left{
+    height: 100%;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hiten-img{
+    width: 25rem;
+    position: absolute;
+    top: 80vh;
+    transform: translateY(-50%) rotateZ(-30deg);
+    right: -5rem;
+    animation-name: hiten;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -o-animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    opacity: 0.9;
+}
+
+@keyframes hiten {
+    from{
+        transform: translateX(20%) translateY(-50%) rotateZ(-10deg);
+    }
+    to{
+        transform: translateX(0%) translateY(-50%) rotateZ(-30deg);
+    }
+}
+
+.about-left h1{
+    color: white;
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: start;
+    width: 100%;
+    padding-left: 0.5rem;
+}
+
+.about-para{
+    height: 92%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.about-para p{
+    align-self: center;
+    justify-self: center;
+    margin: 0.5em;
+    font-size: 1.5em;
+    color: white;
+    -webkit-text-stroke-width: 0.05px;
+    -webkit-text-stroke-color: black;
+}
+
+/* ..contact.. */
+
+.contact-main{
+    width: 100%;
+    height: 100vh;
+    background: #ff5200;
+    padding: 2rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+}
+
+.contact-div{
+    width: 25rem;
+    height: max-content;
+}
+
+.limk{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.contact-div h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.contact-div p{
+    color: white;
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+}
+
+.contact-social{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    width: 15rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: #fd6722;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2em;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.social-grp{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.contact-social:hover{
+    background: white;
+    border-radius: 1.5rem;
+}
+
+/* ///Contact page/// */
+
+.work-main{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: #01937c;
+    display: flex;
+    padding: 10rem;
+    border-bottom: 1px solid white;
+}
+
+.work-div{
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 60%;
+    padding: 2rem;
+}
+
+.work-div a{
+    text-decoration: none;
+    color: white;
+}
+
+.work-div p{
+    font-size: 1rem;
+}
+
+.work-div h1{
+    font-size: 3rem;
+    width: 100%;
+    text-align: start;
+    margin: 0.2rem;
+}
+
+.work-img{
+    width: 40%;
+}
+
+.work-img img{
+    width: 60rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
